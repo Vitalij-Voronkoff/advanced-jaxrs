@@ -23,8 +23,14 @@ public class MyResource {
 //        return "Path param used " + pathParamExample + " and query param used " + queryParamExample;
 //    }
 
+//    @GET
+//    @Produces(MediaType.TEXT_PLAIN)
+//    public Date testMethod() {
+//        return new Date();
+//    }
+
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces("text/shortdate")
     public Date testMethod() {
         return new Date();
     }
